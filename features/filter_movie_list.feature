@@ -23,8 +23,13 @@ Background: movies have been added to database
   
 Scenario: restrict to movies with 'PG' or 'R' ratings
   # enter step(s) to check the 'PG' and 'R' checkboxes
+    #check(ratings[PG])
   # enter step(s) to uncheck all other checkboxes
+    #uncheck(['G'])
+    #uncheck(['PG-13'])
+    #uncheck(['PG-17'])
   # enter step to "submit" the search form on the homepage
+    #click_button('ratings_submit')
   # enter step(s) to ensure that PG and R movies are visible
   # enter step(s) to ensure that other movies are not visible
 
